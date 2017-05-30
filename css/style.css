@@ -1,0 +1,144 @@
+@charset "utf-8";
+/*全局样式*/
+*{cursor:url(https://www.joren.cc/default.cur),default;}
+a,button,label,text,.contact-content input{cursor:url(https://www.joren.cc/pointer.cur),pointer;}
+body{margin: 0;padding: 0;font-family: "微软雅黑",helvetica,arial,sans-serif;font-size: 14px;}
+a{color: #F75A53;text-decoration: none;}
+a:hover/*,a:focus*/{color: #F75A53;text-decoration: underline;}
+h1,h2,h3,.h1,.h2,.h3{font-family: "微软雅黑",helvetica,arial,sans-serif;font-weight: 500;line-height: 1.5;color: inherit;}
+.h1,.h2,.h3{margin: 0;}
+img{padding: 0;margin: 0;border: 0px;}
+article,aside,details,footer,header,nav,menu,section,figure{margin: 0;padding: 0;display: block;}
+.container{padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;}
+.container{width: 85%;/*min-width: 90%;*/}
+/*.width70{width: 70% !important;}*/
+.width60{width: 50% !important;}
+.pull-left{float: left !important;}
+.pull-right{float: right !important;}
+.nav:after,.row:after{clear: both;}
+.list-unstyled{padding: 0;margin: 0;list-style: none;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.text-center{text-align: center;}
+.items-bg{background-repeat: no-repeat;background-position: center top;background-size: cover;/*position: relative;*/background-attachment: fixed;}
+.items-title{font-size: 24px;padding: 0;margin: 0;color: #000000;}
+.items-title small{font-size: 14px;color: #999999;display: block;margin-top: 10px;margin-bottom: 30px;}
+.cannot_select{-moz-user-select:none;/*火狐*/-webkit-user-select:none;/*webkit浏览器*/-ms-user-select:none;/*IE10*/-khtml-user-select:none;/*早期浏览器*/user-select:none;}
+/*header*/
+.header{background-color: rgba(255,255,255,0.7);box-shadow: 0 0px 10px rgba(0,0,0,0.15);height: 100px;}
+.header-top{z-index: 999999999 !important;}
+/*logo*/
+.header h1{margin: 0;padding: 0;}
+.header .logo{padding-top: 30px;padding-bottom: 23px;display: table;}
+.header h1 small{font-size: 14px;color: #999;display: table;padding-left: 25px;margin-left:25px;line-height: 26px;margin-top: 24px;font-style:italic;background-image: url(../img/logo-vertical-line.png);background-repeat: no-repeat;background-position: left center;}
+/*nav*/
+.nav{display:table;}
+.nav .nav-bar > li{display: block;float: left;text-align: center;position: relative;margin-top: 28px;border-top-right-radius: 6px;border-top-left-radius: 6px;}
+.nav .nav-bar > li:hover,.nav .nav-bar > li:active{background-color: #F75A53;}
+.nav .nav-bar > li > a{padding: 23px 30px 22px 30px;display: block;color: #000;font-size: 14px;line-height: 28px;}
+.nav .nav-bar > li > a:hover,.nav .nav-bar > li:hover a,.nav .nav-bar > li:active a{color: #FFF;text-decoration: none;}
+.nav .nav-bar > li small{display: none;color: #FFF;font-size: 12px;}
+.nav .nav-bar > li:hover small,.nav .nav-bar > li:active small{display: block;}
+.nav .nav-bar > li ul{display: none;background-color: #F75A53;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;padding: 0 0 5px 0;position: absolute;left: 0;top: 72px;z-index:9999999999;}
+.nav .nav-bar > li:hover ul{display: block;}
+.nav .nav-bar > li ul li a{display: block;line-height: 28px;padding: 5px 30px;color: #666666 !important;border-bottom: 1px solid #F5F5F5;background-color: #FFFFFF !important;min-width:4em;text-align: left;}
+.nav .nav-bar > li ul li a:hover,.nav .nav-bar > li ul li a:active{background-color: #FE7A75 !important;color: #FFFFFF !important;text-decoration: none;border-bottom: 1px solid #F75A53;}
+/*Nav-right*/
+.nav-right{position: absolute;right: 30px; padding: 2.75rem 30px 22px 30px;display: none;color: #babcbd;font-size: 1.3em;}
+/*Banner*/
+.rslides{height: 500px;overflow: hidden;margin: 0 auto;width: 100%;position: relative;list-style: none;top: 0px;/*为显示效果增加，问题原因暂时未知|||已解决*/}
+/*.rslides li{width: 100%;}*/
+.banner{background-repeat: no-repeat;background-position: center top;position: relative;background-attachment: fixed;height: 500px;/*margin-top: 100px;*/}
+/*banner轮播失败，此段代码没有使用*/
+/*.rslides_nav.next{background-image: url(url(../img/banner-right.png));left: 30px;}
+.rslides_nav.prev {background-image: url(../img/banner-left.png);right: 30px;}*/
+/*customer*/
+.customer{background-color: #F7F7F7;padding: 40px 0;}
+.customer .row{margin: 0 1px;}
+#service{overflow: hidden;width: 70%;height: 50px;margin: 0px auto 50px;}
+#father{width: 5000%;}
+#son1,#son2{float: left;}
+.customer figure{position: relative;width: 188px;float: left;height: 50px;border-right: 1px solid #EDEDED;}
+/*设置轮播后此代码失效||已修复*/
+.customer figure:hover figcaption{display: block;}
+.customer figure figcaption{display: none;position: absolute;width: 188px;height: 50px;top: 0px;left: 0px;background-color: rgba(247,90,83,0.7);color: #FFFFFF;text-align: center;line-height: 50px;}
+/*About*/
+.about{line-height: 30px;color: #FFFFFF;width: 70% !important;padding: 40px 0;}
+.about .items-title,.about .items-title small,.about-us,.about-us a:hover{color: #FFFFFF;}
+.about .about-link{margin-top: 20px;}
+.about a.honor,.about a.team{background-repeat: no-repeat;text-align: center;padding-top: 80px;margin-left: 20px;margin-right: 20px;display: inline-block;background-position: center top;}
+.about a.honor{background-image: url(../img/about/about-llink-1.png);}
+.about a.honor:hover{text-decoration: none;background-image: url(../img/about/about-llink-11.png);}
+.about a.team{background-image: url(../img/about/about-link-2.png);background-color: rgba(255,255,255,0);}
+.about a.team:hover{text-decoration: none;background-image: url(../img/about/about-link-22.png);}
+/*footer*/
+footer{ background-color: #14171A !important;}
+footer .copy{display: block;height: 50px;line-height: 50px;width: 90%;padding-left: 15px;padding-right: 15px;margin-right: auto;margin-left: auto;}
+footer p{margin: 0;padding: 0;}
+footer,footer a {text-transform: uppercase;font-size: 12px;color: #babcbd;}
+/*Custom Service*/
+.kefu {background-color: #f75a53;border: 2px solid #fff;position: fixed;width: 80px;top: 238px;right: 20px;text-align: center;display: block;border-radius: 8px;font-size: 12px;z-index: 9999999;}
+.kefu ul li a {display: block;color: #FFF;text-decoration: none;border-top: 1px solid #ffb4a6;overflow: hidden;width: 100%;padding: 0;height: 30px;padding-top: 15px;z-index: 999999;}
+.kefu ul li a:hover {background-color:lightskyblue;}
+.kefu a.kefu-contact:hover {border-radius: 6px 6px 0px 0px;}
+.kefu ul li a.kefu-QRCode .kefu-QRCode-img {padding: 10px;background-color: #FFFFFF;position: absolute;top:93px;left:-172px;display:none;-webkit-box-shadow: 0 0px 12px rgba(0, 0, 0, 0.1);box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);}
+.kefu ul li a.kefu-QRCode:hover .kefu-QRCode-img {display:block;}
+.kefu ul li a.kefu-top {padding-top:10px;}
+.kefu ul li a.kefu-top:hover {border-radius: 0px 0px 6px 6px;}
+.kefu ul li a.kefu-QQ, .kefu ul li a.kefu-top, .kefu ul li a.kefu-QRCode {display: none;}
+.kefu:hover ul li a.kefu-QQ,.kefu:hover ul li a.kefu-top,.kefu:hover ul li a.kefu-QRCode {display: block;}
+
+
+/*Pages*/
+.page-banner{/*margin-top:100px;*/padding: 60px 0;background-repeat: no-repeat;position: relative;background-attachment: fixed;background-position: center top;}
+.page-banner h2 {margin: 0;font-size: 24px;color:#FFFFFF;}
+.page-banner h2 small {color: #ffb3b0;font-size: 18px;padding-left: 15px;margin-left: 15px;font-weight: normal;border-left: 1px solid #ffb3b0;}
+.page-banner .char {color:#ffb3b0;text-align:left;margin:0;padding:15px 0 10px 0;}
+.page-banner .char a{color: #ffffff;}
+
+.crumbs{background-color:#f7f7f7;height:60px;}
+.crumbs ul li{display: inline-block;}
+.crumbs ul li a{color: #666666;line-height: 60px;padding: 0 15px;display: inline-block;font-size:12px;}
+.crumbs ul li a:hover, .crumbs ul li a.hover{background-color: #FFFFFF;color: #f75a53;text-decoration: none;}
+
+.info > img{width: 70%;}
+.info,.content{line-height: 30px;color: #333333;}
+.info hr{margin: 30px 0;border: 0;border-top: 1px solid #eee;}
+.info p{color:#666666;position: relative;}
+.introduction-table{display: table;margin: 0 auto;}
+.introduction-info{margin-right:30px;}
+
+.culture{padding: 45px 0;}
+
+.row{display: table;}
+.team{background-color: #e6e6e6;}
+.team figure{width: 262px;float: left;position: relative;height: 360px;margin: 15px;}
+.team figure:hover figcaption {display:block;}
+.team figure figcaption{position: absolute;width: 202px;height: 240px;top: 0px;left: 0px;display: none;background-color: rgba(247,90,83,0.7);padding:60px 30px;color: #FFFFFF;}
+.team figure h3.team-title{font-size: 14px;font-weight: normal;margin: 0;line-height: 60px;position: absolute;width: 262px;height: 60px;left: 0px;background-color: rgba(255,255,255,0.95);bottom: 0px;color: #999999;}
+.team figure h3.team-title a{color: #F75A53;font-size: 18px;font-weight: bold;}
+.team figure:hover h3.team-title{display:none;}
+.team figure figcaption h3 {font-size: 16px;font-weight: bold;margin:0 0 12px 0;}
+.team figure figcaption h3 a {color: #FFFFFF;text-decoration: underline;}
+.team figure figcaption h3 a:hover {}
+.team figure figcaption p {margin:0;line-height:28px;}
+.team-more {padding: 7px 10px 5px 10px;background-color: rgba(255,255,255,0.70);color: #f75a53 !important;text-decoration: none !important;}
+.team-more:hover {color: #FFFFFF !important;background-color: #589ED7;}
+.pages{padding: 30px 0 30px;text-align: center;}
+.pages li{display: inline;}
+
+
+.contact{display: block;padding: 3em 0;height: 40em;}
+.contact h2{text-align: center;font-size: 3em;margin-bottom: 1em;color: #babcbd;}
+.contact-content input[type="text"],.contact-content textarea{padding: 1.1em;width: 100%;margin: 1% 0 0 0;outline: none;color: #2F3338;border: 1px solid #BEBBBB;font-size: 1em;font-weight: 300;}
+.contact-content form textarea{resize:none;height:170px;		}
+.submit{text-align:center;margin: 2% 0;}
+.contact-content input[type="submit"]{background:#E42313;color: #fff;font-weight: 500;border: none;outline: none;padding: 0.7em 3em;display: inline-block;font-size: 1.2em;text-transform: uppercase;
+transition:0.5s all;}
+.contact-content  input[type="submit"]:hover{background-color: #2F3338;transition:0.5s all;}
+
+/*.contact section h3{font-size: 16px;font-weight: bold;color: #FFFFFF;padding: 0 0 30px 0;margin: 0;}
+.contact section h4{font-size: 16px;font-weight: bold;color: #FFFFFF;padding: 14px 0 10px 0;margin: 0;}
+.contact section{float: left;}
+.contact section.joren{margin-left: 160px;}
+*/

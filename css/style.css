@@ -1,7 +1,7 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /*全局样式*/
-*{cursor:url(https://www.joren.cc/default.cur),default;}
-a,button,label,text,.contact-content input{cursor:url(https://www.joren.cc/pointer.cur),pointer;}
+*{cursor:url(https://localhost/default.cur),default;}
+a,button,label,text,.contact-content input{cursor:url(https://localhost/pointer.cur),pointer;}
 body{margin: 0;padding: 0;font-family: "微软雅黑",helvetica,arial,sans-serif;font-size: 14px;}
 a{color: #F75A53;text-decoration: none;}
 a:hover/*,a:focus*/{color: #F75A53;text-decoration: underline;}
